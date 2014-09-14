@@ -40,8 +40,8 @@ class News extends CI_Controller {
 		
 		$data['title'] = 'Create a news item';
 		
-		$this->form_validation->set_rules('title', '¼ÐÃD', 'required');
-		$this->form_validation->set_rules('text', '¤º¤å', 'required');
+		$this->form_validation->set_rules('title', 'æ¨™é¡Œ', 'required');
+		$this->form_validation->set_rules('text', 'å…§æ–‡', 'required');
 		
 		if ($this->form_validation->run() === FALSE)
 		{

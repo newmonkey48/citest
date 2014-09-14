@@ -5,11 +5,11 @@ class Pages extends CI_Controller {
 	{				
 		if ( ! file_exists('application/views/pages/'.$page.'.php'))
 		{
-			// «z°Ç!§Ú­Ì¨S¦³³o­Ó­¶­±!
+			// å“‡å‹’!æˆ‘å€‘æ²’æœ‰é€™å€‹é é¢!
 			show_404();
 		}
 		
-		$data['title'] = ucfirst($page); // ²Ä¤@­Ó¦r¥À¤j¼g
+		$data['title'] = ucfirst($page); // ç¬¬ä¸€å€‹å­—æ¯å¤§å¯«
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('pages/'.$page, $data);
