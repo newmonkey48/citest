@@ -1,0 +1,1 @@
+<?phpclass Calendar extends CI_Controller {	public function __construct()	{		parent::__construct();	}		public function index()	{				$data['title'] = "Hello Calendar";		        $this->load->library('Calendar');		$this->load->view('templates/header', $data);		$this->load->view('sample/calendar/index');		$this->load->view('templates/footer');	}}?>

@@ -1,0 +1,1 @@
+<?php$data = array(               3  => 'http://example.com/news/article/2006/03/',               7  => 'http://example.com/news/article/2006/07/',               13 => 'http://example.com/news/article/2006/13/',               26 => 'http://example.com/news/article/2006/26/'             );echo $this->calendar->generate(2006,6,$data);
